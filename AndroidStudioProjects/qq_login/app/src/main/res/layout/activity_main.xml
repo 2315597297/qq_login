@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/dv_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+    <ImageView
+        android:layout_marginTop="100px"
+        android:id="@+id/main_logo"
+        android:src="@drawable/ic_brightness_high_red_50_24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    <LinearLayout
+        android:id="@+id/main_text_layout"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/main_button_layout"
+        android:layout_marginBottom="25dp"
+        android:layout_height="170dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="I`m QQ"
+            android:textSize="40dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:textColor="@color/white"
+            android:text="每一天"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="乐在沟通"
+            android:textColor="@color/white"
+            android:textSize="40dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/main_button_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/main_show_login"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="登录"
+            android:textColor="@color/white"
+            android:background="@drawable/login_button"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="48dp" />
+        <Button
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/register_button"
+            android:layout_marginRight="15dp"
+            android:text="新用户"
+            android:textColor="@color/white"
+            android:layout_height="48dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/main_login_layout"
+        android:layout_width="match_parent"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical"
+        android:layout_marginTop="600px"
+        android:visibility="invisible"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/main_user"
+            android:layout_width="match_parent"
+            android:hint="QQ号/手机/邮箱"
+            android:layout_height="48dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="密码"
+            android:layout_height="48dp" />
+        <Button
+            android:id="@+id/main_login"
+            android:layout_width="match_parent"
+            android:background="@drawable/register_button"
+            android:textColor="@color/white"
+            android:text="登录"
+            android:layout_height="48dp" />
+    </LinearLayout>
+</RelativeLayout>
